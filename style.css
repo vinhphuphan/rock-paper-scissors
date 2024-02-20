@@ -1,17 +1,94 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+* {
     box-sizing: border-box;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    margin : 0 auto;
+    background-color: #F5F5F5;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-    max-width: 2520px;
-    margin : 0 auto;
+    background-color: #FFFFFF;
+    height: 400px;
+    max-width: 800px;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color : #333333;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
 }
 
-.opponent-score , .user-score {
-    width: 10rem;
-    height: 10rem;
-    background-color: cyan;
-    
+.title {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
 }
+
+.playground {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.playground img {
+    width: 9rem;
+}
+
+.user-choice {
+    transform: rotate(90deg) rotateY(180deg);
+}
+
+.computer-choice {
+    transform: rotate(-90deg) ;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: all ease 200ms;
+    cursor: pointer;
+}
+
+.option.active {
+    opacity: 1;
+}
+
+.option:hover {
+    opacity: 1;
+}
+
+.options img {
+    width: 6rem;
+}
+
+
+
+
+
+
