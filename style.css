@@ -17,7 +17,7 @@ body {
 
 .container {
     background-color: #FFFFFF;
-    height: 400px;
+    max-height: 800px;
     max-width: 800px;
     border-radius: 1rem;
     padding: 2rem 4rem;
@@ -28,6 +28,26 @@ body {
     color : #333333;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
 }
+
+.container.active .user-choice{
+    animation : userShake 0.7s ease infinite;
+}
+@keyframes userShake {
+    50% {
+        transform: rotate(70deg) rotateY(180deg);
+    }
+}
+
+.container.active .computer-choice{
+    animation : computerShake 0.7s ease infinite;
+}
+
+@keyframes computerShake {
+    50% {
+        transform: rotate(-70deg);
+    }
+}
+
 
 .title {
     font-size: 2rem;
@@ -45,6 +65,13 @@ body {
     width: 9rem;
 }
 
+.user , .computer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
 .user-choice {
     transform: rotate(90deg) rotateY(180deg);
 }
@@ -56,7 +83,7 @@ body {
 .subtitle {
     font-size: 1.5rem;
     font-weight: normal;
-    margin-bottom: 1rem;
+    margin: 2rem;
 }
 
 .options {
