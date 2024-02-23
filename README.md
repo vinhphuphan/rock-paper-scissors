@@ -15,6 +15,8 @@ Click on one of the options (Rock, Paper, or Scissors) to make your choice. The 
 - Dynamic updating of the game result.
 - Responsive design, suitable for different screen sizes.
 
+👉 Live Site URL: [Rock Paper Scissors](https://vinhphuphan.github.io/rock-paper-scissors/)
+
 ## Technologies Used
 
 - HTML5
